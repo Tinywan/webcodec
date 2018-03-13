@@ -2,7 +2,7 @@
 
 * 系统需要安装 `Go` 环境和 `MySQL`数据库支持。
 
-* git 方式安装
+* git 方式安装（暂不支持 go get 方式安装）
 
     ```bash
     $ cd $GOPATH/src
@@ -12,13 +12,13 @@
     
 * 打开配置文件 `webcodec/conf/app.conf`，修改相关配置。
 
-* 创建数据库 `webcodec`，再导入install.sql
+* 创建数据库 `webcodec`，导入 `webcodec.sql`文件
 
     ```bash
-    $ mysql -u username -p -D webcron < install.sql
+    $ mysql -u username -p -D webcodec < webcodec.sql
     ```
     
-* 使用 `bee run` 编译命令源码文件和运行对应的可执行文件以及依赖包的安装
+* 使用 `bee run` 编译命令源码文件和运行对应的可执行文件以及依赖包的安装（测试运行）
     
     ```bash
     | ___ \
@@ -50,13 +50,6 @@
     2018/03/13 17:27:32.265 [I] [asm_amd64.s:2337] http server Running on http://:8080
     ```    
     
-*   编译    
-
-    ```bash
-    $ cd webcron
-    $ go build // 生成可执行文件 webcodec
-    ```
-    
 *   运行
 	
     ```bash
@@ -68,7 +61,7 @@
 
 *   访问： 
 
-    * 地址栏：`http://IP:8080`
+    * 地址栏：[http://webcodec.tinywan.com/login](http://webcodec.tinywan.com/login) 或者 `http://{$IP}:8080`
 
     * 帐号：`admin` 密码：`admin888`
     
