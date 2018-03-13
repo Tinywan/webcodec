@@ -3,4 +3,4 @@ bin/
 *.tar.gz
 *.exe
 *.log
-.idea/*
+.idea
