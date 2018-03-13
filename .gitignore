@@ -1,0 +1,6 @@
+webcodec*
+bin/
+*.tar.gz
+*.exe
+*.log
+.idea/*
