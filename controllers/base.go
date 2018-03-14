@@ -2,10 +2,10 @@ package controllers
 
 import (
 	"github.com/astaxie/beego"
-	"webcodec/models"
+	"github.com/Tinywan/webcodec/models"
 	"strconv"
 	"strings"
-	"webcodec/libs"
+	"github.com/Tinywan/webcodec/libs"
 )
 
 const (
