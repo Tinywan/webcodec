@@ -7,6 +7,8 @@ import (
 	"strings"
 )
 
+
+// 结构体是由一系列具有相同类型或不同类型的数据构成的数据集合
 type Pager struct {
 	Page     int
 	Totalnum int

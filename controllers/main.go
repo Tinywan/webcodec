@@ -16,7 +16,7 @@ type MainController struct {
 
 // 首页
 func (this *MainController) Index() {
-	this.Data["pageTitle"] = "系统概况"
+	this.Data["pageTitle"] = "系统概况"  // this.Data 是一个用来存储输出数据的 map，可以赋值任意类型的值
 
 	this.display()
 }
@@ -96,7 +96,7 @@ func (this *MainController)  Login() {
 		}
 	}
 
-	this.TplName = "main/login.html"
+	this.TplName = "main/login.html" // this.TplName 就是需要渲染的模板，当然也可以不使用模版，直接用 this.Ctx.WriteString 输出字符串
 }
 
 // 退出登录

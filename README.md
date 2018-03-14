@@ -5,7 +5,7 @@
 * `go get `方式安装
 
     ```bash
-    $ go get github.com/Tinywan/webcodec
+    $ go get -u github.com/Tinywan/webcodec
     ```
     
 * 打开配置文件 `webcodec/conf/app.conf`，修改相关配置。
