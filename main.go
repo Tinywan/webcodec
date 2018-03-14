@@ -3,10 +3,10 @@ package main
 import (
 	//_ "webcodec/routers" // _ 表示只调用routers的 init()方法， 这个包只引入执行了里面的 init 函数
 	"github.com/astaxie/beego"
-	"github.com/html/template"
 	"github.com/Tinywan/webcodec/controllers"
 	"github.com/Tinywan/webcodec/models"
 	"net/http"
+	"html/template"
 )
 
 const VERSION = "1.0.0"

@@ -6,8 +6,8 @@ import (
 	"time"
 	"strings"
 	"strconv"
-	"webcodec/models"
-	"webcodec/libs"
+	"github.com/Tinywan/webcodec/models"
+	"github.com/Tinywan/webcodec/libs"
 )
 
 type MainController struct {

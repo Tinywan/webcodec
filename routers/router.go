@@ -1,7 +1,7 @@
 package routers
 
 import (
-	"webcodec/controllers"
+	"github.com/Tinywan/webcodec/controllers"
 	"github.com/astaxie/beego"
 )
 
