@@ -1,6 +1,6 @@
 ## 安装说明
 
-* 系统需要安装 `Go` 环境和 `MySQL`数据库支持。
+* 系统需要安装 [Golang环境](http://www.cnblogs.com/tinywan/p/6928300.html) 和 `MySQL`数据库支持。
 
 * `go get `方式安装
 
@@ -30,7 +30,7 @@
     
 * 访问： 
 
-    * 地址栏：[http://webcodec.tinywan.com/login](http://webcodec.tinywan.com/login) 或者 `http://{$IP}:8080`
+    * 地址栏：[webcodec.tinywan.com](http://webcodec.tinywan.com/) 或者 `http://{$IP}:8080`
 
     * 帐号：`admin` 密码：`admin888`
     
