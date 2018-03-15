@@ -22,4 +22,8 @@ func init() {
 	beego.Router("/logout", &controllers.MainController{}, "*:Logout")
 	beego.Router("/profile", &controllers.MainController{}, "*:Profile")
 	beego.Router("/gettime", &controllers.MainController{}, "*:GetTime")
+
+	beego.Router("/test_get", &controllers.MainController{}, "*:Get")
+
+	beego.Router("/input_get",&controllers.InputController{},"*:InputGet")
 }

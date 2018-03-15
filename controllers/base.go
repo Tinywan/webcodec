@@ -31,7 +31,7 @@ func (this *BaseController) Prepare() {
 	controllerName, actionName := this.GetControllerAndAction()
 	this.controllerName = strings.ToLower(controllerName[0 : len(controllerName)-10])
 	this.actionName = strings.ToLower(actionName)
-	this.auth()
+	//this.auth()
 
 	this.Data["version"] = beego.AppConfig.String("version")
 	this.Data["siteName"] = beego.AppConfig.String("site.name")

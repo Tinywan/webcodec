@@ -17,8 +17,12 @@ type MainController struct {
 // 首页
 func (this *MainController) Index() {
 	this.Data["pageTitle"] = "系统概况"  // this.Data 是一个用来存储输出数据的 map，可以赋值任意类型的值
-
 	this.display()
+}
+
+func (this *MainController) Get() {
+	name := this.GetString("name")
+	this.Ctx.WriteString(name)
 }
 
 // 个人信息
