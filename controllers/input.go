@@ -1,7 +1,21 @@
 package controllers
 
+import (
+	"github.com/astaxie/beego"
+)
+
 type InputController struct {
-	BaseController
+	beego.Controller
+}
+
+func (this *InputController) Prepare(){
+
+}
+
+func (this *InputController) Get(){
+	this.Data["content"] = "value"
+	this.Layout = "layout/layout.html"
+	this.TplName = "input/index.html"
 }
 
 func (this *InputController) InputGet(){

@@ -13,6 +13,10 @@ const (
 	MSG_ERR = -1
 )
 
+type NestPreparer interface {
+	NestPreparer()
+}
+
 // 通过子 struct 的方法重写，就可以实现自己的逻辑
 type BaseController struct {
 	beego.Controller     // 这个控制器里面内嵌了 beego.Controller，这就是 Go 的嵌入方式，也就是 MainController 自动拥有了所有 beego.Controller 的方法。
@@ -22,6 +26,7 @@ type BaseController struct {
 	userId         int
 	userName       string
 	pageSize       int
+	isLogin		   bool
 }
 
 // 这个函数主要是为了用户扩展用的，这个函数会在下面定义的这些 Method 方法之前执行，用户可以重写这个函数实现类似用户验证之类
